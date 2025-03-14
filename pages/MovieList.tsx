@@ -45,10 +45,16 @@ const MovieList = () => {
 
     setFilteredMovies(sortedMovies);
   };
+  console.log(movies)
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>Movie List</h1>
+    <div style={{ padding: "20px" }}><header style={{color:"Black" 
+    ,height:"100px" 
+    ,margin:"10px"
+     ,textAlign:"center"
+     , background:"lightBlue"
+     ,}}><h1>Movie List</h1></header>
+      
 
       <input
         type="text"
@@ -96,7 +102,7 @@ const MovieList = () => {
               background: "#fff",
             }}
             onClick={() => navigate(`/movie/${movie.id}`)}
-            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.06)")}
             onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
           >
             <img
