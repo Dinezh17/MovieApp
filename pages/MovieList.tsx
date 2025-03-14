@@ -86,7 +86,7 @@ const MovieList = () => {
 
       {error && <p style={{ color: "red" }}>{error}</p>}
 
-      {/* Movie Cards Container */}
+      
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", gap: "20px", marginTop: "20px" }}>
         {filteredMovies.map((movie: any) => (
           <div
